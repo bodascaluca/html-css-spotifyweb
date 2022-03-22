@@ -184,6 +184,7 @@ main{
     width: 20px;
     background-color: grey;
     border-radius: 50%;
+    border: 22.5px;
 }
 
 .sidebar-bottom-author h4{
