@@ -36,6 +36,9 @@ img{
     background-color: pink;
 }
 
+.cl-gry{
+    color: grey;
+}
 /* MAIN  */
 main{
     display: flex ;
@@ -56,24 +59,13 @@ main{
     /* TEST  */
     background-color: lightblue;
 }
-
-.sidebar-top{
-    display: flex;
-    flex-direction: column;
-    height: calc(100% - 80px);
-    min-height: 350px;
-
-    /* TREST */
-    background-color: pink;
-}
-
 /* LOGO  */
 .logo{
     background-color: black;
     padding: 19px 10px;
 }
 
-/* MENU */
+/* Menu */
 .menu{
     display: flex;
     flex-direction: column;
@@ -81,7 +73,10 @@ main{
 }
 
 .menu img{
-    width: 50px;
+    width: 30px;
+}
+
+.menu-pdg{
     padding:4px 10px;
 }
 
@@ -98,11 +93,32 @@ main{
     padding-bottom:30px;
 }
 
-
-
+/* Playlist  */
 .playlist{
     flex-grow: 1;
-    background-color: bisque;
+    background-color: black;
+}
+
+.playlist h2{
+    font-size:.9em;
+}
+
+.playlist-btn{
+    margin: .6em 0 ;
+}
+
+.playlist-a{
+    color: inherit;
+    text-decoration: none;
+    align-items: center;
+}
+
+.playlist-i{
+    font-size:2em;
+}
+
+.playlist-a-tx{
+    margin-left: .5em;
 }
 
 .playlist ul{
@@ -110,11 +126,15 @@ main{
     overflow: auto;
 }
 
+.playlist ul li{
+    margin-bottom: .7em;
+}
+
 .sidebar-bottom{
     height: 80px;
 
     /* TREST */
-    background-color: blue;
+    background-color: black;
 }
 
 @media screen and (max-width:600px) {
@@ -125,6 +145,52 @@ main{
     }
     
 }
+
+/* SIDEBAR-BOTTOM  */
+.sidebar-top{
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 80px);
+    min-height: 350px;
+
+    /* TREST */
+    background-color: pink;
+}
+
+.download-app{
+    padding:.5em 0;
+}
+
+.download-app h6{
+    margin-left:.9em;
+}
+
+.sidebar-bottom img{
+    fill:grey;
+    width: 14px;
+}
+
+.bdr{
+    border: 1px solid grey;
+    width: 11em;
+}
+
+.sidebar-bottom-author{
+    margin-top: .7em;
+    align-items: center;
+}
+
+.sidebar-bottom-author img{
+    width: 20px;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+.sidebar-bottom-author h4{
+    color:white;
+    margin-left: .5em;
+}
+
 /* CONTENT  */
 .content{
     float: left;
@@ -133,7 +199,7 @@ main{
     overflow-y:autos ;
     padding: 120px 20px 20px;
     /* TEST  */
-    background-color: lightgreen;
+    background-color: #141923;
 }
  
 /* CONTENT-CTA  */
