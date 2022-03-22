@@ -67,16 +67,38 @@ main{
     background-color: pink;
 }
 
+/* LOGO  */
 .logo{
-    background-color: red;
-    padding: 30px 0;
-
+    background-color: black;
+    padding: 19px 10px;
 }
 
+/* MENU */
 .menu{
-    background-color: aqua;
-
+    display: flex;
+    flex-direction: column;
+    background-color: black;
 }
+
+.menu img{
+    width: 50px;
+    padding:4px 10px;
+}
+
+.menu-flex{
+    display: flex;
+    align-items: center;
+}
+
+.menu-fts{
+    font-size: .7em;
+}
+
+.menu div:nth-child(3){
+    padding-bottom:30px;
+}
+
+
 
 .playlist{
     flex-grow: 1;
