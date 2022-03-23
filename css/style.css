@@ -1,3 +1,13 @@
+
+:root{
+    /* SIZE  */
+    --color-btn:#c1c1c1;
+    --color-truegrey:#5a5a5a;
+}
+
+
+
+
 /* RESET  */
 *{
     padding: 0;
@@ -50,7 +60,7 @@ img{
 main{
     display: flex ;
     width: 100%;
-    height: calc(100% - 100px);
+    height: calc(100% - 80px);
     overflow: hidden;
 
       /* TEST  */
@@ -182,7 +192,7 @@ main{
 }
 
 .bdr{
-    border: 1px solid grey;
+    border: 1px solid var(--color-truegrey);
     width: 11em;
 }
 
@@ -193,7 +203,7 @@ main{
 
 .sidebar-bottom-author img{
     width: 20px;
-    background-color: grey;
+    background-color: var(--color-truegrey);
     border-radius: 50%;
     display: inline-block;
     width: 25px;
@@ -251,7 +261,7 @@ main{
 
 .footer{
     width: 100%;
-    height: 100px;
+    height: 80px;
     background-color: #282828;
     justify-content: space-between;
     align-items: center;
@@ -301,9 +311,8 @@ main{
 
 /* FOOTER-CENTER */
 .footer-center{
-    width: 600px;
-    height: 80%;
-    border: 1px solid red;
+    width: 500px;
+    /* height: 80%; */
     flex-direction: column;
     align-items: center;
     justify-content:space-around;
@@ -324,7 +333,7 @@ main{
 
 .footer-center-down{
     align-items: center;
-    width: 550px;
+    width: 80%;
 }
 
 .footer-center-down-tx1,
@@ -334,29 +343,59 @@ main{
 }
 
 .line-miusic{
-    border: 1px solid #5a5a5a ;
-    background-color: #5a5a5a;
+    border: 1px solid var(--color-truegrey) ;
+    background-color: var(--color-truegrey);
     border-radius: 20px;
-    width: 80%;
+    width: 100%;
     font-size: .3rem;
     height: .2rem;
     vertical-align: middle;
+    position: relative;
 }
+
+.line-miusic-none{
+    border: 1px solid var(--color-btn) ;
+    background-color: var(--color-btn);
+    border-radius: 20px;
+    width: 30%;
+    font-size: .3rem;
+    height: .2rem;
+    vertical-align: middle;
+    position: absolute;
+    top: 0%;
+    left: 0;
+}
+
 
 /* FOOTER-RIGHT  */
 .footer-right{
     width: 200PX;
+    min-width: 150px;
     height: 30px;
     align-items: center;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .footer-right-border{
-    border: 1px solid #5a5a5a ;
-    background-color: #5a5a5a;
+    border: 1px solid var(--color-truegrey) ;
+    background-color: var(--color-truegrey);
     border-radius: 20px;
     height: .2rem;
     width: 100px;
+    position: relative;
+
+}
+
+.footer-right-border-none{
+    border: 1px solid var(--color-btn) ;
+    background-color: var(--color-btn);
+    border-radius: 20px;
+    height: .2rem;
+    width: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 
