@@ -316,6 +316,11 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content:space-around;
+    overflow: hidden;
+}
+
+.vrt-mdl{
+    vertical-align: bottom;
 }
 
 .footer-center-up{
@@ -369,12 +374,19 @@ main{
 
 /* FOOTER-RIGHT  */
 .footer-right{
-    width: 200PX;
-    min-width: 150px;
+    width: 180PX;
+    min-width: 60px;
     height: 30px;
     align-items: center;
-    justify-content: space-between;
-    overflow: hidden;
+    /* overflow: hidden; */
+}
+
+.footer-right .list, .screan, .volume-up{
+    font-size: .8rem;
+}
+
+.mgn-rgt{
+    margin-right: 10px;
 }
 
 .footer-right-border{
@@ -392,7 +404,7 @@ main{
     background-color: var(--color-btn);
     border-radius: 20px;
     height: .2rem;
-    width: 20px;
+    width: 20%;
     position: absolute;
     top: 0;
     left: 0;
