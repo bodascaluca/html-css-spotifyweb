@@ -294,7 +294,26 @@ main{
 .albums-items{
     width: calc(100% / 6 - 5px);
     margin-right: 5px;
+    position: relative;
 }
+
+.botton{
+    position: absolute;
+    top: 75px;
+    right: 75px;
+    /* transform: translate(-50%,-50%); */
+}
+
+.botton i{
+    font-size: 3.3rem;
+    color: white;
+    display: none;
+}
+
+.album-items:hover .botton i{
+    display: inline-block;
+}
+
 
 .albums-items,
 .john-doe-albums-items h4{
