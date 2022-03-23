@@ -62,7 +62,7 @@ main{
 /* LOGO  */
 .logo{
     background-color: black;
-    padding: 19px 10px;
+    padding: 27px 35px;
 }
 
 /* Menu */
@@ -184,7 +184,9 @@ main{
     width: 20px;
     background-color: grey;
     border-radius: 50%;
-    border: 22.5px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
 }
 
 .sidebar-bottom-author h4{
@@ -210,7 +212,7 @@ main{
     right: 0;
     width: calc(100% - 200px);
     height: 100px;
-    background-color: rgba(0, 0, 0, .4);
+    background-color: rgb(247, 1, 1);
 }
 
 @media screen and (max-width:600px) {
@@ -228,7 +230,7 @@ main{
     height: 100px;
 
       /* TEST  */
-      background-color: violet;
+      background-color: rgb(58, 10, 233);
 }
 
 
