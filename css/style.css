@@ -263,12 +263,17 @@ main{
 
 /* Content  */
 .content-menu-row{
-    justify-content: center;
+    justify-content: center;    
 }
 
 .content-menu{
     width: 800px;
     background-color: red;
+}
+
+.content-menu ul{
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .content-menu ul li{
