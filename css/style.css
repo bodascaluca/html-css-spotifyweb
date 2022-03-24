@@ -233,7 +233,6 @@ main{
 /* CONTENT-CTA  */
 .conteiner-cta{
     width: 195px;
-    border: 1px solid rgb(7, 240, 131);
     text-align: center;
 }
 
@@ -262,7 +261,6 @@ main{
     padding: .3em 1.9em;
 }
 
-
 /* 
 .controls-buttons .control-play{
     font-size: 2rem;
@@ -287,7 +285,8 @@ main{
 
 /* Content  */
 .content-menu-row{
-    justify-content: center;    
+    justify-content: center;   
+    height: 60px;
 }
 
 .content-menu{
@@ -309,6 +308,13 @@ main{
 }
 
 .content-menu ul li div{
+    display: none;
+   border: 1px solid yellowgreen;
+   width: 40%;
+}
+
+.content-menu ul li:hover div{
+    display: inline-block;
    border: 1px solid yellowgreen;
    width: 40%;
 }
@@ -316,6 +322,10 @@ main{
 .content-menu ul li a{
     text-decoration: none;
     color: inherit;
+}
+
+.content-menu li a:hover{
+    color: white;
 }
 
 .recently-played{
@@ -539,7 +549,6 @@ a{
     background-color:white ;
     border-radius: 5px;
     position: relative;
-
 }
 
 .control-bar-circle{
