@@ -5,7 +5,7 @@
     --color-truegrey:#5a5a5a;
 
     /* SIZE  */
-    --height-footer:80px;
+    --height-footer:100px;
 }
 
 
@@ -44,6 +44,7 @@ img{
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    min-width: 500px;
 
     /* TEST  */
     background-color: rgb(9, 241, 47);
@@ -368,6 +369,161 @@ main{
     align-items: center;
 }
 
+.album{
+    width: 250px;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 10px ;
+}
+
+.album-cover{
+    width: 20%;
+}
+
+.album-title{
+    width: 50%;
+}
+
+.album-title h4{
+   font-size: 1rem;
+   color: white;
+}
+
+.album-title p{
+    font-size: .8rem;
+    color: var(--color-truegrey);
+   
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.album-title a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.album-icons{
+    /* width: 30%; */ /* Viene tolto cosi lasciamo lo spazio per centrare tutto */
+}
+
+.album-icons i{
+    margin-left: 10px;
+    color: var(--color-truegrey);
+}
+
+.album-icons a i:hover{
+    color: white;
+}
+/* Controls  */
+.controls{
+    width: 35%;
+    height: 100%;
+}
+
+.controls-buttons{
+    width: 100%;
+    height: 60%;
+}
+
+.controls-buttons ul{
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.controls-buttons li{
+   margin:0 10px;
+   font-size: 1.2rem;
+   cursor: pointer;
+}
+
+.controls-buttons .control-play{
+    font-size: 2rem;
+    margin: 0 15px;
+   width: 50px;
+    text-align: center;
+}
+
+.controls-buttons .control-play:hover{
+   font-size: 2.4rem;
+   width: 50px;
+}
+
+.controls-time{
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.control-time-min{
+    color: var(--color-truegrey);
+    font-size: .8rem;
+}
+/* Audio  */
+.audio{
+    width: 250px;
+    height: 100%;
+}
+
+.audio ul{
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.list-menu li{
+   list-style: none;
+}
+
+.audio .audio-control{
+    width: 70%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Control-bar  */
+.control-bar{
+    width: 80%;
+    height: 4px;
+    background-color: var(--color-truegrey);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.control-bar .control-bar-overlay{
+    height: 100%;
+    width: 20%;
+    background-color:white ;
+    border-radius: 5px;
+    position: relative;
+
+}
+
+.control-bar-circle{
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.control-bar:hover .control-bar-overlay{
+    background-color: yellowgreen;
+}
+
+.control-bar:hover .control-bar-circle{
+    display: inline-block;
+}
+/* FOOTER-CENTER  */
+
+/* 
 .footer-left{
     margin-left: .7rem;
     justify-content: center;
@@ -408,12 +564,11 @@ main{
 
 .footer-icon-2{
     margin-left: .8em;
-} 
+}  */
 
 /* FOOTER-CENTER */
-.footer-center{
+/* .footer-center{
     width: 500px;
-    /* height: 80%; */
     flex-direction: column;
     align-items: center;
     justify-content:space-around;
@@ -471,18 +626,17 @@ main{
     top: 0%;
     left: 0;
 }
-
+ */
 
 /* FOOTER-RIGHT  */
-.footer-right{
+/* .footer-right{
     width: 180PX;
     min-width: 60px;
     height: 30px;
     align-items: center;
-    /* overflow: hidden; */
-}
+} */
 
-.footer-right .list, .screan, .volume-up{
+/* .footer-right .list, .screan, .volume-up{
     font-size: .8rem;
 }
 
@@ -509,7 +663,7 @@ main{
     position: absolute;
     top: 0;
     left: 0;
-}
+} */
 
 
 
