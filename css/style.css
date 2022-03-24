@@ -231,6 +231,17 @@ main{
 }
  
 /* CONTENT-CTA  */
+.conteiner-cta{
+    width: 195px;
+    border: 1px solid rgb(7, 240, 131);
+    text-align: center;
+}
+
+.content-cta .upgrade:hover{
+    font-size: .9rem;
+    width: 195px;
+}
+
 .content-cta{
     position: fixed;
     top: 0;
@@ -251,6 +262,19 @@ main{
     padding: .3em 1.9em;
 }
 
+
+/* 
+.controls-buttons .control-play{
+    font-size: 2rem;
+    margin: 0 15px;
+    width: 50px;
+    text-align: center;
+}
+
+.controls-buttons .control-play:hover{
+   font-size: 2.4rem;
+   width: 50px;
+} */
 @media screen and (max-width:600px) {
     .content{
     width: calc(100% - 80px);
@@ -268,7 +292,6 @@ main{
 
 .content-menu{
     width: 800px;
-    background-color: red;
 }
 
 .content-menu ul{
@@ -282,11 +305,12 @@ main{
     list-style: none;
     margin: 1rem;
     color: var(--color-truegrey);
+    font-size: .9rem;
 }
 
 .content-menu ul li div{
-   border: 1px solid green;
-   width: 20%;
+   border: 1px solid yellowgreen;
+   width: 40%;
 }
 
 .content-menu ul li a{
@@ -459,7 +483,7 @@ a{
 .controls-buttons .control-play{
     font-size: 2rem;
     margin: 0 15px;
-   width: 50px;
+    width: 50px;
     text-align: center;
 }
 
