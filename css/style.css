@@ -262,20 +262,31 @@ main{
 }
 
 /* Content  */
-.content-menu{
+.content-menu-row{
     justify-content: center;
+}
+
+.content-menu{
+    width: 800px;
+    background-color: red;
+}
+
+.content-menu ul li{
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin: 1rem;
+    color: var(--color-truegrey);
+}
+
+.content-menu ul li div{
+   border: 1px solid green;
+   width: 20%;
 }
 
 .content-menu ul li a{
     text-decoration: none;
     color: inherit;
-}
-
-.content-menu ul li{
-    display: inline-block;
-    list-style: none;
-    margin-left: 1rem;
-    color: var(--color-truegrey);
 }
 
 .recently-played{
