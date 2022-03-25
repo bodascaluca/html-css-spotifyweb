@@ -397,15 +397,63 @@ main{
 .john-doe-albums-items{
     width: calc(100% / 6 - 5px);
     margin-right: 20px;
+    cursor: pointer;
+    margin-bottom: 3rem;
 }
 
 .john-doe-albums-items img{
     width: 100%;
 }
 
+.john-doe-albums-items .cover-img{
+    position: relative;
+}
+
+.john-doe-albums-items .cover-img img{  /* Così non compare .cover-img-overlay sotto la img, ma rimane allo stesso livello della foto */
+    display: block;
+    width: 100%;
+}
+
+.john-doe-albums-items .cover-img .cover-img-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+    color: white;
+    display: none;
+}
+
+.cover-img:hover  .cover-img-overlay{
+    display: flex;
+}
+
 .circle-border{
     border: 1px solid #141923 ;
     border-radius: 50%;
+}
+
+.john-doe-albums-items .cover-img .cover-img-overlay-circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .4);
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+    color: white;
+    display: none;
+}
+
+.cover-img:hover  .cover-img-overlay-circle{
+    display: flex;
 }
 /* FOOTER  */
 
