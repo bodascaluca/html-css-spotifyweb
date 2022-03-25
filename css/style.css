@@ -131,7 +131,7 @@ main{
 
 .menu-li 
 img, 
-h3{
+.h3{
     opacity: .4;
 }
 
@@ -478,6 +478,10 @@ h3{
     .albums-items{
         width: calc(100% / 4 - 5px);
     }
+
+    .content-menu-row{
+        margin-bottom: 2rem; 
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -503,6 +507,13 @@ h3{
     margin-right: 20px;
     cursor: pointer;
     margin-bottom: 3rem;
+}
+
+@media screen and (max-width:600px){
+
+    .john-doe-albums-items{
+        width: calc(100% / 2 - 5px);
+    }
 }
 
 .john-doe-albums-items img{
