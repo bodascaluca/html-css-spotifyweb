@@ -175,7 +175,7 @@ h3{
         flex-direction: column;
         margin-bottom: .5rem;
     }
-    
+
     .menu .menu-lit a h3{
         display: none;
     }
@@ -276,7 +276,7 @@ h3{
     margin-left:.9em;
 }
 
-.sidebar-bottom img{
+.sidebar-bottom .download-app img{
     opacity: .4;
     width: 14px;
 }
@@ -293,7 +293,7 @@ h3{
 
 .sidebar-bottom-author img{
     width: 20px;
-    background-color: var(--color-truegrey);
+    background-color: var(--color-btn);
     border-radius: 50%;
     display: inline-block;
     width: 25px;
@@ -305,6 +305,26 @@ h3{
     margin-left: .5em;
 }
 
+@media screen and (max-width:600px) {
+    
+    .sidebar-bottom h6, .bdr{
+        display: none;
+    }
+
+    .sidebar-bottom h4{
+        display: none;
+    }
+
+    .sidebar-bottom {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sidebar-bottom .download-app {
+        margin-left:-.9em ;
+    }
+   
+}
 /* CONTENT  */
 .content{
     float: left;
