@@ -315,13 +315,14 @@ h3{
         display: none;
     }
 
-    .sidebar-bottom {
+    .download-app{
         display: flex;
         justify-content: center;
     }
 
-    .sidebar-bottom .download-app {
-        margin-left:-.9em ;
+    .sidebar-bottom-author{
+        display: flex;
+        justify-content: center;
     }
    
 }
