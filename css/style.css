@@ -79,7 +79,7 @@ main{
     height:100%;
 
     /* TEST  */
-    background-color: lightblue;
+    background-color: black;
 }
 /* LOGO  */
 .logo{
@@ -87,6 +87,25 @@ main{
     padding: 27px 35px;
 }
 
+.logo .logo-small-img{
+    display: none;
+}
+
+
+@media screen and (max-width:600px) {
+
+    .logo{
+        padding: 19px 19px;
+    }
+
+    .logo .logo-img{
+        display: none;
+    }
+
+    .logo .logo-small-img{
+        display: block;
+    }
+}
 /* Menu */
 .menu{
     display: flex;
@@ -149,6 +168,23 @@ h3{
     padding-bottom:30px;
 }
 
+@media screen and (max-width:600px) {
+    
+    .menu .menu-lit{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: .5rem;
+    }
+    
+    .menu .menu-lit a h3{
+        display: none;
+    }
+
+    .menu .menu-lit a img{
+        width: 35px;
+    }
+
+}
 
 /* Playlist  */
 .playlist{
@@ -207,7 +243,10 @@ h3{
 
     .sidebar{
         width: 80px;
+    }
 
+    .playlist{
+        display: none;
     }
     
 }
