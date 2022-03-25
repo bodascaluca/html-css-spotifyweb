@@ -3,6 +3,10 @@
     /* COLOR  */
     --color-btn:#c1c1c1;
     --color-truegrey:#5a5a5a;
+    --color-white:white;
+    --background-color:black;
+    --color-border-hover:yellowgreen;
+
 
     /* SIZE  */
     --height-footer:100px;
@@ -23,7 +27,7 @@ html{
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-size: 100%;
-    color: white;
+    color: var(--color-white);
 }
 
 img{
@@ -45,31 +49,22 @@ img{
     height: 100vh;
     overflow: hidden;
     min-width: 500px;
-
-    /* TEST  */
-    background-color: rgb(9, 241, 47);
 }
 
 .cl-gry{
-    color: grey;
+    color: var(--color-truegrey);
 }
 
 .darkgrey{
-    color: #c1c1c1;
+    color: var(--color-btn);
 }
 
-.hover:hover{
-    color:yellow;
-}
 /* MAIN  */
 main{
     display: flex ;
     width: 100%;
     height: calc(100% - var(--height-footer));
     overflow: hidden;
-
-      /* TEST  */
-      background-color: violet;
 }
 
 /* SIDEBAR  */
@@ -78,12 +73,11 @@ main{
     width: 200px;
     height:100%;
 
-    /* TEST  */
-    background-color: black;
+    background-color: var(--background-color);
 }
 /* LOGO  */
 .logo{
-    background-color: black;
+    background-color: var(--background-color);
     padding: 27px 35px;
 }
 
@@ -110,7 +104,7 @@ main{
 .menu{
     display: flex;
     flex-direction: column;
-    background-color: black;
+    background-color: var(--background-color);
 }
 
 .menu img{
@@ -146,8 +140,8 @@ h3{
 }
 
 .menu-border-2{
-    border-left:1px solid yellowgreen;
-    background-color: yellowgreen;
+    border-left:1px solid var(--color-border-hover);
+    background-color: var(--color-border-hover);
     width: .2rem;
     display: none;
 }
@@ -189,7 +183,7 @@ h3{
 /* Playlist  */
 .playlist{
     flex-grow: 1;
-    background-color: black;
+    background-color: var(--background-color);
     overflow: hidden;
 }
 
@@ -208,11 +202,11 @@ h3{
 }
 
 .playlist .playlist-a:hover{
-    color: white;
+    color: var(--color-white);
 }
 
 .playlist ul li:hover{
-    color: white;
+    color: var(--color-white);
 }
 
 .playlist-i{
@@ -234,9 +228,7 @@ h3{
 
 .sidebar-bottom{
     height: 80px;
-
-    /* TREST */
-    background-color: black;
+    background-color: var(--background-color);
 }
 
 @media screen and (max-width:600px) {
@@ -301,7 +293,7 @@ h3{
 }
 
 .sidebar-bottom-author h4{
-    color:white;
+    color: var(--color-white);
     margin-left: .5em;
 }
 
@@ -333,7 +325,6 @@ h3{
     height: 100%;
     overflow-y:auto;
     padding: 120px 20px 20px;
-    /* TEST  */
     background-color: #141923;
 }
  
@@ -363,7 +354,7 @@ h3{
     color: inherit;
     text-decoration: none;
     font-size: .8em;
-    border: 1px solid white;
+    border: 1px solid var(--color-white);
     border-radius:25px;
     padding: .3em 1.9em;
 }
@@ -404,13 +395,13 @@ h3{
 
 .content-menu ul li div{
     display: none;
-   border: 1px solid yellowgreen;
+   border: 1px solid var(--color-border-hover);
    width: 40%;
 }
 
 .content-menu ul li:hover div{
     display: inline-block;
-   border: 1px solid yellowgreen;
+   border: 1px solid var(--color-border-hover);
    width: 40%;
 }
 
@@ -420,7 +411,7 @@ h3{
 }
 
 .content-menu li a:hover{
-    color: white;
+    color: var(--color-white);
 }
 
 .recently-played{
@@ -463,7 +454,7 @@ h3{
     justify-content: center;
     align-items: center;
     font-size: 3.5rem;
-    color: white;
+    color: var(--color-white);
     display: none;
 }
 
@@ -537,7 +528,7 @@ h3{
     justify-content: center;
     align-items: center;
     font-size: 3.5rem;
-    color: white;
+    color:  var(--color-white);
     display: none;
 }
 
@@ -561,7 +552,7 @@ h3{
     justify-content: center;
     align-items: center;
     font-size: 3.5rem;
-    color: white;
+    color: var(--color-white);
     display: none;
 }
 
@@ -595,7 +586,7 @@ h3{
 
 .album-title h4{
    font-size: 1rem;
-   color: white;
+   color: var(--color-white);
 }
 
 .album-title p{
@@ -611,12 +602,11 @@ a{
 
 .album-title a:hover{
     text-decoration: underline;
-    color: white;
+    color: var(--color-white);
 }
 
-.album-icons{
+/* .album-icons{ */
     /* width: 30%; */ /* Viene tolto cosi lasciamo lo spazio per centrare tutto */
-}
 
 .album-icons i{
     margin-left: 10px;
@@ -624,7 +614,7 @@ a{
 }
 
 .album-icons a i:hover{
-    color: white;
+    color: var(--color-white);
 }
 
 /* Controls  */
@@ -706,7 +696,7 @@ a{
 .control-bar .control-bar-overlay{
     height: 100%;
     width: 20%;
-    background-color:white ;
+    background-color:var(--color-white) ;
     border-radius: 5px;
     position: relative;
 }
@@ -718,13 +708,13 @@ a{
     right: 0;
     width: 15px;
     height: 15px;
-    background-color: white;
+    background-color: var(--color-white);
     border-radius: 50%;
     transform: translateY(-50%);
 }
 
 .control-bar:hover .control-bar-overlay{
-    background-color: yellowgreen;
+    background-color: var(--color-border-hover);
 }
 
 .control-bar:hover .control-bar-circle{
